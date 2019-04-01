@@ -1,0 +1,36 @@
+.App {
+	text-align: center;
+	background-color: #50E3C2;
+	display: table;
+	width: 100%;
+}
+
+.App-sidebar-wrapper{
+	width: 5%;
+	float: left;	
+	padding-top: 7%;
+}
+ 
+.App-sidebar-wrapper .left-sidebar-menu a {
+	background: #50E3C2;
+	color: #ffffff;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+}
+
+.App-sidebar-wrapper .left-sidebar-menu .is-active {
+	background: #292929;
+}
+
+.App-content-wrapper  {
+	width: 95%;
+	float: left;
+	padding: 3% 5%;
+	box-sizing: border-box;
+	background: #282c34;
+}
+
+

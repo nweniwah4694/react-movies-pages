@@ -1,0 +1,41 @@
+.App-header {
+  color: #ccc;
+  text-align: left;
+}
+
+.App-header .App-title {
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.sidebar-menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+.sidebar-menu__item {
+  float: left;
+  margin-right: 1%;
+  background: #bbb;
+  border-radius: 5px;
+}
+
+.sidebar-menu__item a{
+  text-decoration: none;
+  padding: 10px 25px;
+  display: block;
+  transition: all .3s ease;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.sidebar-menu__item a.is-active,
+.sidebar-menu__item:hover a {
+  background: #50E3C2;
+  color: #000000 !important;
+}
+
