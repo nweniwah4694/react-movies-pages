@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/nweniwah4694/react-movies-pages/precache-manifest.2f16e09ada8612c8399907fdb515444a.js"
+  "/react-movies-pages/precache-manifest.6e6a2b43ad7a113e82d25c281afe74d0.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/nweniwah4694/react-movies-pages/index.html", {
+workbox.routing.registerNavigationRoute("/react-movies-pages/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
