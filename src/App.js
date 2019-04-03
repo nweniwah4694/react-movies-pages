@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter,Route } from 'react-router-dom';
-import { PATH_POPULAR, PATH_TOP_RATED, PATH_UPCOMING, PATH_WATCHLIST } from './api';
+import { PATH_POPULAR, PATH_TOP_RATED, PATH_UPCOMING, PATH_PLAYING, PATH_WATCHLIST } from './api';
 import Header from './components/Header';
 import Main from './components/Main';
 import Discover from './components/Discover';
@@ -62,14 +62,8 @@ class App extends Component {
               user={this.state.user} filters={this.state.filters}
               updateFilters={this.updateStateWithFilters}
               resetFilters={this.resetFilters}
-            />
+            />        
             <Route exact path="/react-movies-pages"
-              render={()=><Discover
-                title="Discover"
-                updateFilters={this.updateStateWithFilters}
-                filters={this.state.filters} />}
-             />
-            <Route exact path="/popular"
               render={()=><Main
                 title="Popular"
                 section={PATH_POPULAR} />}
@@ -83,6 +77,11 @@ class App extends Component {
               render={()=><Main
                 title="Coming Soon"
                 section={PATH_UPCOMING}  />}
+            />
+            <Route exact path="/watchList"
+              render={()=><WatchList
+                title="Watch List"
+                section={PATH_PLAYING}  />}
             />
             <Route exact path="/watchList"
               render={()=><WatchList
