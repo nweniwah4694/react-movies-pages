@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter,Route } from 'react-router-dom';
-import { PATH_POPULAR, PATH_TOP_RATED, PATH_UPCOMING, PATH_PLAYING, PATH_WATCHLIST } from './api';
+import { PATH_POPULAR, PATH_DISCOVER, PATH_TOP_RATED, PATH_UPCOMING, PATH_PLAYING, PATH_WATCHLIST } from './api';
 import Header from './components/Header';
 import Main from './components/Main';
+import Discover from './components/Discover';
 import WatchList from './components/WatchList';
 import SearchResults from './components/SearchResults';
 import { NavLink } from 'react-router-dom';
@@ -46,7 +47,7 @@ class App extends Component {
         <div className="App">        
           <div className="App-sidebar-wrapper"> 
             <div className="left-sidebar-menu">
-              <NavLink exact={true} to="/" activeClassName="is-active">
+              <NavLink exact={true} to="/react-movies-pages" activeClassName="is-active">
                 <i class="fa fal fa-bars"></i>
               </NavLink>
             </div>
@@ -62,6 +63,14 @@ class App extends Component {
               updateFilters={this.updateStateWithFilters}
               resetFilters={this.resetFilters}
             />          
+            <Route exact path="/react-movies-pages"
+              render={()=><Discover
+                title="Home"
+                section={PATH_DISCOVER}
+                updateFilters={this.updateStateWithFilters}
+                filters={this.state.filters}
+                         />}
+            />
             <Route exact path="/popular"
               render={()=><Main
                 title="Popular"

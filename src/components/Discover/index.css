@@ -1,0 +1,56 @@
+.Discover-main-title{
+  margin-bottom: 0;
+}
+
+.discover-tagline{
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.sort-order{ 
+  display: flex;
+  padding: 10px;
+  float: right;
+  margin-bottom: 40px;
+}
+
+.sort-order__item{
+  display: flex;
+  align-items: center;
+  display: inherit;
+  padding: 0 8px;
+}
+
+.sort-order-label{
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sort-order__item .Dropdown-arrow{
+  display: none;
+}
+
+.sort-order__item .Dropdown-placeholder{
+  text-decoration: underline;
+}
+
+.sort-order__item .Dropdown-control {
+  padding: 6px 20px 6px 10px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.sort-order__item .Dropdown-menu{
+  background-color: #191c1f;
+  position: absolute;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 25px;
+  text-align: left;
+  cursor: pointer;
+  z-index: 1000;
+}
