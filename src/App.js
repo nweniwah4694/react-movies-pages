@@ -63,7 +63,7 @@ class App extends Component {
               updateFilters={this.updateStateWithFilters}
               resetFilters={this.resetFilters}
             />
-            <Route exact path="/"
+            <Route exact path="/react-movies-pages"
               render={()=><Discover
                 title="Discover"
                 updateFilters={this.updateStateWithFilters}
