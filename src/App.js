@@ -3,7 +3,6 @@ import { BrowserRouter,Route } from 'react-router-dom';
 import { PATH_POPULAR, PATH_TOP_RATED, PATH_UPCOMING, PATH_PLAYING, PATH_WATCHLIST } from './api';
 import Header from './components/Header';
 import Main from './components/Main';
-import Discover from './components/Discover';
 import WatchList from './components/WatchList';
 import SearchResults from './components/SearchResults';
 import { NavLink } from 'react-router-dom';
