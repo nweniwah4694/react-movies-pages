@@ -61,8 +61,8 @@ class App extends Component {
               user={this.state.user} filters={this.state.filters}
               updateFilters={this.updateStateWithFilters}
               resetFilters={this.resetFilters}
-            />        
-            <Route exact path="/react-movies-pages"
+            />          
+            <Route exact path="/popular"
               render={()=><Main
                 title="Popular"
                 section={PATH_POPULAR} />}
@@ -77,15 +77,15 @@ class App extends Component {
                 title="Coming Soon"
                 section={PATH_UPCOMING}  />}
             />
-            <Route exact path="/watchList"
-              render={()=><WatchList
-                title="Watch List"
-                section={PATH_PLAYING}  />}
+            <Route exact path="/now-playing"
+              render={()=><Main
+                title="Now Playing"
+                section={PATH_UPCOMING}  />}
             />
             <Route exact path="/watchList"
               render={()=><WatchList
                 title="Watch List"
-                section={PATH_WATCHLIST}  />}
+                section={PATH_PLAYING}  />}
             />
             <Route path="/search" component={SearchResults}/>            
           </div>
